@@ -187,7 +187,9 @@ class AI(Player):
         self.choice = 0
 
     def fill_options(self):
-        #
+        """
+        Set the values in the options dictionary to 0
+        """
         for r in range(10):
             self.options[str(r)] = 0
 
