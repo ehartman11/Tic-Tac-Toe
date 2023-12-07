@@ -135,7 +135,7 @@ class Board:
         Check if the user would like another game and either reset conditions or quit the program
         """
         self.player_choice = input("Would you like to play again? Y/N > ")
-        if self.player_choice == "Y":
+        if self.player_choice == "Y" or "y":
             self.reset_game()
             self.start_game()
         else:
