@@ -87,7 +87,7 @@ class Board:
                 print("Game ended in a tie")
                 self.print_board()
                 self.run_it_back()
-            elif self.current_player.name == "Player1":
+            elif self.current_player.name == self.players[0].name:
                 if msg:
                     print(msg)
                 print(f"{self.current_player.name},Please make your next move")
