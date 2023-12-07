@@ -190,7 +190,7 @@ class AI(Player):
         """
         Set the values in the options dictionary to 0
         """
-        for r in range(10):
+        for r in range(0, 10):
             self.options[str(r)] = 0
 
     def analyze_options(self, board):
@@ -235,7 +235,7 @@ class AI(Player):
         """
         # choose option with the highest possible number of win combinations.
         for k in self.options:
-            if self.options[k] > self.choice:
+            if self.options[k] > self.options[str(self.choice)]:
                 self.choice = int(k)
         # If there are no more winning combinations available, choose from remaining positions at random
         if self.choice == 0:
