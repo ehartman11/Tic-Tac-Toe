@@ -1,0 +1,5 @@
+name,wins,losses,ties,opponent
+CPU,1,0,0,erica
+CPU,2,1,0,ethan
+erica,1,0,0,CPU
+ethan,2,1,0,CPU
